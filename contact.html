@@ -122,25 +122,21 @@
           </div>
 
           <div>
-            <form action="forms/contact.php" method="post" name="formulario" id="formulario"> <br>
-              <label for="nombre" > Nombre Completo:</label>
-          <input name="nombre" type="text" required id="nombre" size="30" maxlength="100"> 
-<br> 
-<br> 
-              <label for="edad"> Edad: </label>
-              <input type="number" name="edad" required id="edad" min="1" max="100">
-              <br><br>
-              <label for="nombre"> Correo electronico:</label>
-              <input type="email" name="correo" required id="correo"><br><br>
-              <label for="proyecto"> Le gusta la idea del proyecto? </label><br>
-              <input type="radio" name="GrupoOpciones1" value="1" id="GrupoOpciones1_0" />  Si
-              <input type="radio" name="GrupoOpciones1" value="2" id="GrupoOpciones1_1"/> No<br><br>                 
-              <label for="comentario">Mensaje:</label><br>
-              <textarea name="comentario" required id="comentario" cols="45" rows="5"></textarea><br><br>
-           <input type="submit" value="Enviar formulario"> 
-           <input type="Reset" value="Borrar datos"> 
-
-</form>
+                      <form
+            action="https://formspree.io/f/mvonvvyb"
+            method="POST"
+          >
+            <label>
+              Your email:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
         </div>
         </div>
 
