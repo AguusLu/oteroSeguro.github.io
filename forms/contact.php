@@ -27,7 +27,7 @@ $mensaje .= "con el mensaje: " . $comentario . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time()); 
 
 $para = 'rodrigootero.pas@gmail.com'; 
-$asunto = 'mision'; 
+$asunto = 'consulta'; 
 
 mail($para, $asunto, utf8_decode($mensaje), $header); 
 
