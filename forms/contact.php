@@ -1,30 +1,44 @@
-<?php
-// Recuperar los datos del formulario
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Documento sin título</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
 
-// Configurar el destinatario y el asunto del correo
-$to = 'rodrigootero.pas@gmail.com';
-$subject = 'Nuevo mensaje del formulario de contacto';
+<body>
 
-// Construir el cuerpo del correo
-$body = "Nombre: $name\n";
-$body .= "Correo electrónico: $email\n";
-$body .= "Mensaje:\n$message\n";
+<?php 
+error_reporting(0); 
+$nombre = $_POST['nombre']; 
+$edad = $_POST['edad'];  
+$correo= $_POST['correo']; 
+$proyecto=$_POST['GrupoOpciones1']; 
+$comentario = $_POST['comentario']; 
+$header = 'From: ' . $correo  . " \r\n"; 
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n"; 
+$header .= "Mime-Version: 1.0 \r\n"; 
+$header .= "Content-Type: text/plain"; 
 
-// Configurar las cabeceras del correo
-$headers = "From: $name <$email>\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
+$mensaje = "Este mensaje fue enviado por " . $nombre . " \r\n"; 
+$mensaje .=  "con edad " . $edad . " \r\n"; 
+$mensaje .= "Su e-mail es: " . $correo . " \r\n"; 
+$mensaje .= "le gusto: " . $proyecto . " \r\n"; 
+$mensaje .= "danos tu mensaje: " . $comentario . " \r\n"; 
+$mensaje .= "Enviado el " . date('d/m/Y', time()); 
 
-// Enviar el correo
-if (mail($to, $subject, $body, $headers)) {
-  // Mostrar mensaje de éxito
-  echo '<p>Mensaje enviado correctamente. Gracias por contactarnos.</p>';
-} else {
-  // Mostrar mensaje de error
-  echo '<p>Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.</p>';
-}
-?>
+$para = 'agus.luu@gmail.com'; 
+$asunto = 'mision'; 
+
+mail($para, $asunto, utf8_decode($mensaje), $header); 
+
+echo 'El mensaje ha sido enviado correctamente'; 
+
+?> 
+
+</body>
+</html>
+

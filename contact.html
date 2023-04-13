@@ -122,20 +122,25 @@
           </div>
 
           <div>
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Tu email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-            </div>
-            <div class="text-center"><button type="submit">Enviar mensaje</button></div>
-          </form>
+            <form action="forms/contact.php" method="post" name="formulario" id="formulario"> <br>
+              <label for="nombre" > Nombre Completo:</label>
+          <input name="nombre" type="text" required id="nombre" size="30" maxlength="100"> 
+<br> 
+<br> 
+              <label for="edad"> Edad: </label>
+              <input type="number" name="edad" required id="edad" min="1" max="100">
+              <br><br>
+              <label for="nombre"> Correo electronico:</label>
+              <input type="email" name="correo" required id="correo"><br><br>
+              <label for="proyecto"> Le gusta la idea del proyecto? </label><br>
+              <input type="radio" name="GrupoOpciones1" value="1" id="GrupoOpciones1_0" />  Si
+              <input type="radio" name="GrupoOpciones1" value="2" id="GrupoOpciones1_1"/> No<br><br>                 
+              <label for="comentario">Mensaje:</label><br>
+              <textarea name="comentario" required id="comentario" cols="45" rows="5"></textarea><br><br>
+           <input type="submit" value="Enviar formulario"> 
+           <input type="Reset" value="Borrar datos"> 
+
+</form>
         </div>
         </div>
 
