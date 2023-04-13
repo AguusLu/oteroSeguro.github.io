@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - Eterna Bootstrap Template</title>
+  <title>Contacto</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -33,14 +33,14 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">        
+      <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">rodrigootero.pas@gmail.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>11-6830-2794</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100077605364613" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/seguros.otero?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rodrigo-otero-976625179/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -121,18 +121,19 @@
             <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.1970197044625!2d-58.628829777917154!3d-34.66650212167042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc740c63e39ab%3A0x70b418f797b0d440!2sAv.%20Eva%20Per%C3%B3n%201819%2C%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681344473401!5m2!1ses!2sar" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
-          <div>
-            <form action="https://formspree.io/f/mjvdppdz" method="POST">
-                <label>
-                  Su email:
-                  <input type="email" name="email">
-                </label>
-                <label>
-                  Mensaje:
-                  <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Enviar</button>
+          <div class="col-lg-6">
+            <form action="https://formspree.io/f/mjvdppdz" method="POST" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                </br>
+              </br>
+                </div>
+                <div class="text-center"></div><button type="submit">Enviar</button></div>
+              </div>
               </form>
         </div>
         </div>
@@ -142,76 +143,56 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Enlaces útiles</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.html">Nosotros</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="services.html">Servicios</a></li>
+          </ul>
+        </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contactános</h4>
+          <p>
+            Av. Eva Perón 1819<br>
+            Morón, Buenos Aires<br>
+            Argentina <br><br>
+            <strong>Teléfono:</strong> 11-6830-2794<br>
+            <strong>Email:</strong> rodrigootero.pas@gmail.com<br>
+          </p>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-info">
+          <h3>Sobre Otero Seguros</h3>
+          <p>Brindamos herramientas y asesoramiento personalizado para que puedas asegurar todos tus bienes.</p>
+          <div class="social-links mt-3">
+            <a href="https://www.facebook.com/profile.php?id=100077605364613" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://instagram.com/seguros.otero?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rodrigo-otero-976625179/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Eterna</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
+          <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" ><img src="assets/img/compania/ssn.png" alt=""  height="90px" width="200px"></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Eterna</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Otero</span></strong>. All Rights Reserved
     </div>
-  </footer><!-- End Footer -->
+    <div class="credits">
+         Designed by <a href="">Agustina Giménez</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
