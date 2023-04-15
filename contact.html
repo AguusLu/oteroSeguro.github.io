@@ -119,7 +119,7 @@
 
           <br>
           <div class="col-lg-6">
-          <form id="contactform" action="https://formspree.io/f/mjvdppdz" method="POST">
+          <form id="contactform" action="https://formspree.io/f/mjvdppdz" method="POST" class="php-email-form">
               <div class="row">
                 <div class="col-sm-6 form-group">
                   <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
@@ -128,7 +128,8 @@
                   <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
                 </div>
               </div>
-              <textarea class="form-group mt-3" id="comments" name="message" placeholder="Mensaje" rows="5"></textarea><br>
+              <textarea class="form-control" id="comments" name="message" placeholder="Mensaje" rows="5"></textarea>
+              <!--<textarea class="form-group mt-3" id="comments" name="message" placeholder="Mensaje" rows="5"></textarea><br>-->
               <div class="row">
                 <div class="text-center">
                   <button class="btn btn-default pull-right" type="submit">Enviar</button>
