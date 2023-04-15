@@ -118,7 +118,8 @@
 
 
           <br>
-          <form id="contactform" action="https://formspree.io/f/mjvdppdz" method="POST" class="php-email-form">
+          <div class="col-lg-6">
+          <form id="contactform" action="https://formspree.io/f/mjvdppdz" method="POST">
               <div class="row">
                 <div class="col-sm-6 form-group">
                   <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
@@ -133,6 +134,8 @@
                   <button class="btn btn-default pull-right" type="submit">Enviar</button>
                 </div>
               </div>
+              <input type="hidden" name="_next" value="services.html" />
+              <input type="text" name="_gotcha" style="display:none" /> 
             </form>
   
             <div class="col-lg-6 "> <br><br>
