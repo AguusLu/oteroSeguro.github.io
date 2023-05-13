@@ -21,7 +21,7 @@ if (!empty($_POST['name']) && !empty($_POST['email'])) {
 	    $comments = $_POST['comments'];
 
     // Email de la empresa
-    $companyEmail = 'agus.luu@gmail.com';
+    $companyEmail = 'cesarpulero@gmail.com';
 
     $mailer = new PHPMailer(true);
 
@@ -31,7 +31,7 @@ if (!empty($_POST['name']) && !empty($_POST['email'])) {
         $mailer->Host = 'smtp.gmail.com';		
         $mailer->SMTPAuth = true;                               	
         $mailer->Username = $companyEmail;    	
-        $mailer->Password = 'ikyjyaasvngafefg';                         
+        $mailer->Password = 'hrsawlslfpqpqkil';                         
         $mailer->Port = 465;
         $mailer->SMTPSecure = 'ssl';                                     
         $mailer->From = $companyEmail;
